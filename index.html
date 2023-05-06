@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .excel-sheet {
+            position: relative;
+            overflow: hidden;
+            padding-top: 141.4286%; /* 900 / 700 * 100 */
+        }
+        
+        .excel-sheet iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .worksheet-names {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f2f2f2;
+            padding: 10px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .excel-sheet {
+                padding-top: 200%; /* Adjust the height ratio as needed */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="excel-sheet">
+        <div class="worksheet-names">
+            Worksheet Names:
+            <ul>
+                <li>Sheet1</li>
+                <li>Sheet2</li>
+                <li>Sheet3</li>
+            </ul>
+        </div>
+        <iframe frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=63ED4F2BB33A1D0F%21131&authkey=%21AO7RzePK_jXDfZQ&em=2&wdAllowInteractivity=True&AllowTyping=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=false&resen=false&ed1JS=true"></iframe>
+    </div>
+</body>
+</html>
